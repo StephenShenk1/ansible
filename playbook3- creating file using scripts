@@ -1,0 +1,8 @@
+                                                  playbook2.yaml                                                        Modified  
+---
+- name: creating file using scripts
+  hosts: all   
+  become: true
+  tasks:
+  - name: running script           
+    script: new1.sh
