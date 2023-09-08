@@ -31,4 +31,4 @@
    31  ansible-playbook playbook1.yaml --check
    32  ansible-playbook playbook1.yaml 
    33  history
-ubuntu@ip-172-31-38-74:~$ 
+
