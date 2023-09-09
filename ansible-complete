@@ -1,0 +1,279 @@
+ [Slave4]
+changed: [Slave3]
+
+PLAY RECAP **************************************************************************************************************************************************************
+Slave1                     : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+Slave2                     : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+Slave3                     : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+Slave4                     : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+    1  sudo apt-get update
+    2  sudo apt-get install software-properties-common
+    3  sudo apt-add-repository --yes --update ppa:ansible/ansible
+    4  sudo apt-get install ansible
+    5  ssh-keygen
+    6  cd /home/ubuntu/.ssh
+    7  ls
+    8  cat id_rsa.pub
+    9  cd
+   10  cd /etc/ansible/
+   11  ls
+   12  sudo nano hosts
+   13  cd
+   14  ansible ping Slave1
+   15  ansible -m ping Slave1
+   16  ansible -m ping all
+   17  ansible -m ping Slave2
+   18  ansible -m ping 
+   19  sudo nano hosts
+   20  sudo cat hosts
+   21  sudo nano /etc/ansible/hosts
+   22  ansible -m ping Slave2
+   23  ansible -m ping Slave1
+   24  ansible -m ping test
+   25  sudo nano playbook1.yaml
+   26  ansibe-playbook playbook1.yaml --syntax-check
+   27  ansibe-playbook playbook1.yaml
+   28  sudo nano playbook1.yaml
+   29  ansibe-playbook playbook1.yaml --syntax-check
+   30  ansible-playbook playbook1.yaml --syntax-check
+   31  ansible-playbook playbook1.yaml --check
+   32  ansible-playbook playbook1.yaml 
+   33  history
+   34  cd /etc/ansible/
+   35  ls
+   36  cd roles
+   37  ls
+   38  sudo ansible-galaxy init apache2
+   39  ls
+   40  cd apache2
+   41  ls
+   42  cd tasks
+   43  ls
+   44  sudo nano install.yaml
+   45  sudo nano install.yaml
+   46  sudo nano main.yml
+   47  cd
+   48  sudo nano playbook3.yaml
+   49  ls
+   50  cd /etc/ansible/roles/
+   51  ls
+   52  sudo ansible-galaxy init nginx
+   53  ls
+   54  cd nginx/tasks/
+   55  ls
+   56  sudo nano install.yml
+   57  sudo nano main.yml
+   58  cd
+   59  ls
+   60  ansible-playbook playbook3.yaml --syntax-check
+   61  ansible-playbook playbook3.yaml --check
+   62  ansible-playbook playbook3.yaml 
+   63  history
+   64  cd /etc/ansible/
+   65  cd roles
+   66  ls
+   67  cd apache2
+   68  ls
+   69  cd tasks
+   70  ls
+   71  cat install.yaml
+   72  cd roles
+   73  cd
+   74  cd /etc/ansible/
+   75  cd roles
+   76  ls
+   77  cd nginx
+   78  ls
+   79  cd tasks
+   80  ls
+   81  cat install.yml
+   82  cd
+   83  cd /etc/ansible/roles
+   84  ls
+   85  cd apache2
+   86  cd tasks
+   87  ls
+   88  sudo nano copy.yaml
+   89  cd ..
+   90  ls
+   91  cd files
+   92  ls
+   93  pwd
+   94  sudo nano index.html
+   95  cd ..
+   96  cd tasks
+   97  ls
+   98  sudo nano main.yml
+   99  cat copy.yaml
+  100  cd ../..
+  101  cd nginx/
+  102  cd tasks
+  103  ls
+  104  sudo nano copy.yaml
+  105  sudo nano main.yml
+  106  cd ..
+  107  cd files
+  108  ls
+  109  sudo nano index.html
+  110  cd
+  111  cat playbook3.yaml
+  112  sudo nano playbook4.yaml
+  113  ansible-playbook playbook4.yaml --syntax-check
+  114  ansible-playbook playbook4.yaml --check
+  115  ansible-playbook playbook4.yaml
+  116  history
+  117  cd /var/www/html
+  118  ls
+  119  cd /etc/ansible/roles
+  120  ls
+  121  cd apace2/
+  122  cd apache2/
+  123  cd tasks/
+  124  ls
+  125  cd copy.yaml
+  126  sudo nano copy.yaml
+  127  sudo nano main.yml
+  128  cd ../..
+  129  cd nginx/tasks/
+  130  ls
+  131  sudo nano copy.yaml
+  132  sudo nano main.yml
+  133  cd ..
+  134  cd files/
+  135  ls
+  136  sudo nano index.html
+  137  cd
+  138  ls
+  139  sudo nano playbook4.yaml
+  140  ansible-playbook playbook4.yaml --syntax-check
+  141  ansible-playbook playbook4.yaml --check
+  142  ansible-playbook playbook4.yaml
+  143  history
+  144  cd /etc/ansible/roles/
+  145  ls
+  146  cd apache2/
+  147  ls
+  148  cd tasks
+  149  ls
+  150  sudo nano copy.yaml
+  151  cd ..
+  152  ls
+  153  cd files/
+  154  pwd
+  155  sudo nano index.html
+  156  cd ..
+  157  cd tasks/
+  158  ls
+  159  sudo nano copy.yaml
+  160  sudo nano main.yml
+  161  cd ..
+  162  cd nginx/tasks/
+  163  ls
+  164  sudo nano copy.yaml
+  165  sudo nano main.yml
+  166  cd ..
+  167  cd files/
+  168  ls
+  169  sudo nano index.html
+  170  cd
+  171  sudo nano playbook4.yaml
+  172  ansible-playbook playbook4.yaml --syntax-check
+  173  ansible-playbook playbook4.yaml --check
+  174  ansible-playbook playbook4.yaml
+  175  history
+  176  sudo cat .ssh/id_rsa_pub
+  177  sudo cat .ssh/id_rsa.pub
+  178  sudo nano /etc/ansible/hosts
+  179  cd /etc/ansible/roles
+  180  ls
+  181  sudo ansible-galaxy init test
+  182  sudo ansible-galaxy init prod
+  183  ls
+  184  cd test/tasks/
+  185  ls
+  186  sudo nano install.yaml
+  187  sudo nano main.yml
+  188  cat install.yaml
+  189  cd ..
+  190  cd prod/tasks/
+  191  sudo nano install.yaml
+  192  sudo nano main.yml
+  193  cd
+  194  ls
+  195  cat playbook4.yaml
+  196  sudo nano palybook5.yaml
+  197  ansible-playbook palybook5.yamk --syntax-check
+  198  ansible-playbook palybook5.yaml --syntax-check
+  199  ansible-playbook palybook5.yaml --check
+  200  ansible ping Slave4
+  201  ansible -m ping Slave4
+  202  ls
+  203  cd /etc/ansible/
+  204  ls
+  205  cd hosts
+  206  sudo nano hosts
+  207  cd 
+  208  ansible-playbook palybook5.yaml --check
+  209  ansible-playbook palybook5.yaml 
+  210  ansible -m ping all
+  211  cd etc/ansible/roles/
+  212  sudo nano  /etc/ansible/hosts
+  213  cd /etc/ansible/roles
+  214  ls
+  215  cd test/tasks/
+  216  ls
+  217  sudo nano install.yaml
+  218  sudo nano main.yml
+  219  cat install.yaml
+  220  cd ../..
+  221  cd prod/
+  222  cd tasks
+  223  sudo nano install.yaml
+  224  sudo nano main.yml
+  225  cd
+  226  ls
+  227  sudo nanopalybook5.yaml
+  228  sudo nano palybook5.yaml
+  229  ansible-playbook palybook5.yaml --syntax-check
+  230  ansible-playbook palybook5.yaml --check
+  231  ansible-playbook palybook5.yaml 
+  232  sudo nano palybook5.yaml
+  233  sudo nano main.yml
+  234  cd /etc/ansible/roles/prod
+  235  ls
+  236  cd tasks
+  237  ls
+  238  install.yaml
+  239  cat install.yaml
+  240  cat main.yml
+  241  cat install.yaml
+  242  cd
+  243  sudo nano palybook5.yaml
+  244  sudo nano /etc/ansible/hosts
+  245  cd /etc/ansible/roles
+  246  ls
+  247  cd test/tasks/
+  248  ls
+  249  sudo install.yaml
+  250  sudo nano install.yaml
+  251  sudo nano main.yml
+  252  cd ../..
+  253  cd prod/tasks/
+  254  sudo nano install.yaml
+  255  sudo nano main.yml
+  256  cd 
+  257  ls
+  258  cat playbook4.yaml
+  259  sudo nano palybook5.yaml
+  260  ansible-playbook palybook5.yaml --check
+  261  ansible-playbook palybook5.yaml 
+  262  ls -l
+  263  sudo nano playbook1.yaml
+  264  sudo nano palybook5.yaml
+  265  ansible-playbook palybook5.yaml 
+  266  history
+  267  ansible-playbook palybook5.yaml --check
+  268  ansible-playbook palybook5.yaml 
+  269  history
