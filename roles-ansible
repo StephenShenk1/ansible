@@ -1,0 +1,8 @@
+---
+- name: installing apache2
+  apt: name=apache2 state=latest
+
+/etc/ansible/roles/nginx/tasks$ cat install.yml
+---
+- name: installing nginx 
+  apt: name=nginx state=latest
